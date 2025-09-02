@@ -80,7 +80,11 @@ document.getElementById("attendanceForm").addEventListener("submit", function (e
         document.getElementById("longitude").value = "Unavailable";
         event.target.submit();
       },
-      { timeout: 10000 }
+      { 
+    enableHighAccuracy: true,
+    timeout: 30000,
+    maximumAge: 0
+      }
     );
   } else {
     console.warn("⚠️ Geolocation not supported");
@@ -89,3 +93,4 @@ document.getElementById("attendanceForm").addEventListener("submit", function (e
     event.target.submit();
   }
 });
+
