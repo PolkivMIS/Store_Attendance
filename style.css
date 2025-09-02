@@ -99,7 +99,7 @@ button:hover {
   body {
     background-image: 
       url('Showroom_mobile.png');
-    background-size: background-size: 100vw 100vh;
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-position: center;
     font-size: 10px;
@@ -184,4 +184,5 @@ button:hover {
   }
 
 }
+
 
