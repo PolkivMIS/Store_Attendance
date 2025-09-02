@@ -1,0 +1,185 @@
+/* 🌐 Global Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* 🌈 Page Background Setup */
+body {
+  margin: 0;
+  min-height: 80vh;
+  background-image: 
+    linear-gradient(to right, rgba(255, 51, 0, 0.1), rgba(252, 182, 159, 0.1)), 
+    url('Showroom.png');
+  background-size: cover; /* ✅ corrected from 'fill' */
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Calibri', cursive, sans-serif;
+  padding: 20px;
+  color: #333;
+}
+
+/* 📝 Main Form Styling */
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 25px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border: 10px outset #1758f0;
+  position: relative;
+}
+
+/* 🎨 Optional Inner Container with Decorative Cloth Background */
+.form-container {
+  background-image: url('cloth_background.jpg');
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* 🖼 Logo Image Styling */
+.logo {
+  width: 120px;
+  border-radius: 0;
+  object-fit: contain;
+  box-shadow: none;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* 🏷 Label Formatting */
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ff1493;
+  margin-bottom: 10px;
+}
+
+/* 🎯 Specific tweak for photo label */
+label[for="photo"] {
+  margin-bottom: 10px;
+}
+
+
+/* 🔘 Form Inputs and Controls Styling */
+select,
+input[type="file"],
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 2px solid rgb(140, 162, 188);
+  border-radius: 12px;
+  font-size: 16px;
+  background-color: #aaccec;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 🎀 Button Styling */
+button {
+  background: linear-gradient(to right, #6aa8ff, #e799ff);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: transform 0.2s ease;
+}
+
+/* 🖱 Hover Effect on Button */
+button:hover {
+  transform: scale(1.05);
+}
+
+/* 📱 Mobile View Styling */
+@media (max-width: 768px) {
+  body {
+    background-image: 
+      url('Showroom_mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 10px;
+    padding-top: 70px;     /* Pushes content down from the top */
+    padding-right: 70px;   /* Space on the right */
+    padding-bottom: 100px;  /* Space at the bottom */
+    padding-left: 70px;    /* Space on the left */
+
+    color: #333;
+  }
+
+  form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    border: 6px outset #1758f0;
+    position: relative;
+    min-height: 400px;
+  }
+
+  .form-container {
+    background-image: url('Showroom_mobile.png'); /* Optional mobile texture */
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .logo {
+    width: 100px;
+    margin: 0 auto -20px;
+    display: block;
+    object-fit: contain;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ff1493;
+  }
+
+  label[for="photo"] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  label[for="logStatus"] {
+    margin-top: 10px;
+  }
+
+  select,
+  input[type="file"],
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    font-size: 10px;
+    border: 2px solid rgb(140, 162, 188);
+    border-radius: 10px;
+    background-color: #c7d8e8;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  button {
+    background: linear-gradient(to right, #6aa8ff, #e799ff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.2s ease;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+}

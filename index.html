@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Attendance Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <form id="attendanceForm" method="POST" action="https://script.google.com/macros/s/AKfycbyG69sdQQStQ0Swd3NGr5qaW_HZGySeidQk4SJ0LW_I1MS4qt5VUQ2hO2ZNO75RS4jl8A/exec" enctype="multipart/form-data">
+      
+
+    <img class="logo" src="BS.jpeg" alt="Company Logo" />
+
+    
+      <!-- Employee Dropdown -->
+      <label for="employee">Employee Name:</label>
+      <select id="employee" name="employee">
+        <option disabled selected>Select Employee</option>
+      </select><br><br>
+
+      <!-- Login / Logout -->
+      <label for="logStatus">Login / Logout:</label>
+      <select id="logStatus" name="logStatus">
+        <option value="LOG IN">Log In</option>
+        <option value="LOG OUT">Log Out</option>
+      </select><br><br>
+
+      <!-- Hidden Metadata -->
+      <input type="hidden" id="timestamp" name="timestamp">
+      <input type="hidden" id="latitude" name="latitude">
+      <input type="hidden" id="longitude" name="longitude">
+      <input type="hidden" id="photoData" name="photoData">
+
+      <!-- Photo Upload -->
+      <label for="photo">Upload Photo:</label>
+      <input type="file" id="photo" accept="image/*;capture=camera"><br><br>
+
+      <!-- Submit -->
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
