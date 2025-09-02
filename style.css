@@ -13,7 +13,7 @@ body {
   background-size: cover; /* ✅ corrected from 'fill' */
   background-repeat: no-repeat;
   background-position: center;
-  font-family: 'Calibri', sans-serif;
+  font-family: 'Calibri', cursive, sans-serif;
   padding: 20px;
   color: #333;
 }
@@ -99,21 +99,21 @@ button:hover {
   body {
     background-image: 
       url('Showroom_mobile.png');
-    background-size: 100vw 100vh;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     font-size: 10px;
     padding-top: 70px;     /* Pushes content down from the top */
-    padding-right: 40px;   /* Space on the right */
-    padding-bottom: 10px;  /* Space at the bottom */
-    padding-left: 40px;    /* Space on the left */
+    padding-right: 70px;   /* Space on the right */
+    padding-bottom: 100px;  /* Space at the bottom */
+    padding-left: 70px;    /* Space on the left */
 
     color: #333;
   }
 
   form {
     background: #ffffff;
-    padding: 10px;
+    padding: 20px;
     border-radius: 15px;
     max-width: 100%;
     margin: auto;
@@ -182,13 +182,4 @@ button:hover {
   button:hover {
     transform: scale(1.05);
   }
-
 }
-
-
-
-
-
-
-
-
