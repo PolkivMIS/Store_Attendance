@@ -104,9 +104,9 @@ button:hover {
     background-position: center;
     font-size: 10px;
     padding-top: 70px;     /* Pushes content down from the top */
-    padding-right: 70px;   /* Space on the right */
+    padding-right: 50px;   /* Space on the right */
     padding-bottom: 10px;  /* Space at the bottom */
-    padding-left: 70px;    /* Space on the left */
+    padding-left: 50px;    /* Space on the left */
 
     color: #333;
   }
@@ -184,5 +184,6 @@ button:hover {
   }
 
 }
+
 
 
