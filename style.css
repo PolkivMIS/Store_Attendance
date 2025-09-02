@@ -13,7 +13,7 @@ body {
   background-size: cover; /* ✅ corrected from 'fill' */
   background-repeat: no-repeat;
   background-position: center;
-  font-family: 'Calibri', cursive, sans-serif;
+  font-family: 'Calibri', sans-serif;
   padding: 20px;
   color: #333;
 }
@@ -184,6 +184,7 @@ button:hover {
   }
 
 }
+
 
 
 
